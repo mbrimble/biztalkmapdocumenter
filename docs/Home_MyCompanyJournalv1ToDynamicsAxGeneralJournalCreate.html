@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Map To MyCompany.Project.Integration.Finance.Schemas.Dynamics.GeneralJournal.AXGeneralJournalCreate</title>
+<style type="text/css">
+					/*
+					Branding Colour palette.
+					Blue light				R:070 G:155 B:200	#469bc8
+					Blue dark				R:050 G:075 B:118	#324b76
+					Shade 1	(dark mauve)	R:129 G:158 B:187	#819ebb
+					Shade 2	(mauve)			R:174 G:200 B:216	#aec8d8
+					Shade 3	(light mauve)	R:215 G:231 B:239	#d7e7ef
+					Grey dark				R:070 G:070 B:070	#464646
+					Grey medium				R:165 G:165 B:165	#a5a5a5
+					Grey light				R:190 G:190 B:190	#bcbfbe
+					*/
+
+					body	{ font-family: Arial }
+					hr		{ border: 0; height: 2px; width: 100%; }
+					table	{ width: 100%; font-size: small; }
+					th		{ color: white;	background-color: #324b76; text-align: left;}
+					h1		{ color: #469bc8; font-family: Arial; }
+					h2		{ color: #324b76; font-family: Arial; }
+					h3		{ color: #464646; font-family: Arial; }
+
+					#pageTitle { color: #469bc8; font-size: 20px; font-weight: bold }
+
+					.titleArea { border-left: 5px solid #333366; padding-left: 5px }
+					.titleSchema { color: #324b76; font-size: 14px; font-weight: bold }
+					.linkTableAltRow { 	background-color: #ededed; }
+					.linkTableDiffNodeRow { background-color: #C8E2FF }
+					.linkTableCol { border-bottom: 1px solid black; background-color: #CCCC99 }
+					.functoidArea { font-family: Lucida Console, Courier New; font-size: 11px }
+					.functoidName { color: blue }
+					.functoidBracket { color: green; font-weight: bold }
+					.functoidScript { color: #003300 }
+					.paramComma { color: blue; font-weight: bold }
+					.internalLink { font-size: 10px }
+					.collapseref { font-size: 10px; cursor:pointer }
+				</style>
+</head>
+<body>
+<a name="top"></a>
+<div class="titleArea">
+<h1>BizTalk Map Documentation</h1>
+<table border="0">
+<tr class="titleSchema">
+<td>From Schema(s):</td>
+<td>
+    MyCompany.Project.Integration.Finance.Schemas.Journal_v1</td>
+</tr>
+<tr class="titleSchema">
+<td>To Schema:</td>
+<td>
+    MyCompany.Project.Integration.Finance.Schemas.Dynamics.GeneralJournal.AXGeneralJournalCreate</td>
+</tr>
+</table>
+</div>
+<a href="#functoids" class="internalLink">Functoids</a>
+<a href="#constantvalues" class="internalLink">Constant Values</a>
+<hr />
+<h2>Direct Node-to-Node Links (No Functoids)</h2>
+<h3>Page 1: Journal</h3>
+<p>
+<a id="pageDirect1Anchor" onclick="toggleCollapse('pageDirect1', 'pageDirect1Anchor');" title="Collapse" class="collapseref">Collapse</a>
+</p>
+<div id="pageDirect1">
+<table>
+<tr>
+<th width="40%">From</th>
+<th width="40%">To</th>
+<th width="20%">Label</th>
+</tr>
+<tr>
+<td>Journal/Body/Batch/Invoice/TransactionDate</td>
+<td>IntIfGeneralJournal/LedgerJournalTable_1/LedgerJournalTrans_1/TransDate</td>
+<td></td>
+</tr>
+<tr class="linkTableAltRow">
+<td>Journal/Body/Batch/Invoice/Analysis/AccountNumber</td>
+<td>IntIfGeneralJournal/LedgerJournalTable_1/LedgerJournalTrans_1/AccountNum</td>
+<td></td>
+</tr>
+<tr>
+<td>Journal/Body/Batch/Invoice/Analysis/AccountType/1</td>
+<td>IntIfGeneralJournal/LedgerJournalTable_1/LedgerJournalTrans_1/AccountType</td>
+<td></td>
+</tr>
+<tr class="linkTableAltRow">
+<td>Journal/Body/Batch/Invoice/Analysis/OffsetAccountNumber</td>
+<td>IntIfGeneralJournal/LedgerJournalTable_1/LedgerJournalTrans_1/OffsetAccount</td>
+<td></td>
+</tr>
+<tr>
+<td>Journal/Body/Batch/Invoice/Analysis/AccountType/2</td>
+<td>IntIfGeneralJournal/LedgerJournalTable_1/LedgerJournalTrans_1/OffsetAccountType</td>
+<td></td>
+</tr>
+<tr class="linkTableAltRow">
+<td>Journal/Body/Batch/Invoice/InvoiceNumber</td>
+<td>IntIfGeneralJournal/LedgerJournalTable_1/LedgerJournalTrans_1/INTIFInvoice</td>
+<td></td>
+</tr>
+<tr>
+<td>Journal/Body/Batch/Invoice/Analysis/VatGroup</td>
+<td>IntIfGeneralJournal/LedgerJournalTable_1/LedgerJournalTrans_1/INVIFItemVATGroup</td>
+<td></td>
+</tr>
+<tr class="linkTableAltRow">
+<td>Journal/Body/Batch/Invoice/Analysis/VatAmount</td>
+<td>IntIfGeneralJournal/LedgerJournalTable_1/LedgerJournalTrans_1/INTIFCorrectedVATAmount</td>
+<td></td>
+</tr>
+<tr>
+<td>Journal/Body/Batch/Invoice/Text</td>
+<td>IntIfGeneralJournal/LedgerJournalTable_1/LedgerJournalTrans_1/Txt</td>
+<td></td>
+</tr>
+<tr class="linkTableAltRow">
+<td>Journal/Body/Batch/Invoice/OriginalInvoiceNumber</td>
+<td>IntIfGeneralJournal/LedgerJournalTable_1/LedgerJournalTrans_1/INTIFOriginalInvoiceNumber</td>
+<td></td>
+</tr>
+<tr>
+<td>Journal/Body/Batch/Invoice/ReasonCode</td>
+<td>IntIfGeneralJournal/LedgerJournalTable_1/LedgerJournalTrans_1/INTIFReasonCode</td>
+<td></td>
+</tr>
+<tr class="linkTableAltRow">
+<td>Journal/Body/Batch/Invoice/ReasonComment</td>
+<td>IntIfGeneralJournal/LedgerJournalTable_1/LedgerJournalTrans_1/INTIFReasonComment</td>
+<td></td>
+</tr>
+<tr>
+<td>Journal/Body/Batch/BatchNumber</td>
+<td>IntIfGeneralJournal/LedgerJournalTable_1/INTIFBatchId</td>
+<td></td>
+</tr>
+<tr class="linkTableAltRow">
+<td>Journal/Body/Batch/Invoice/DocumentDate</td>
+<td>IntIfGeneralJournal/LedgerJournalTable_1/LedgerJournalTrans_1/INTIFDocumentDate</td>
+<td></td>
+</tr>
+<tr>
+<td>Journal/Body/Batch/Invoice/Currency</td>
+<td>IntIfGeneralJournal/LedgerJournalTable_1/LedgerJournalTrans_1/CurrencyCode</td>
+<td></td>
+</tr>
+<tr class="linkTableAltRow">
+<td>Journal/Header/Systems</td>
+<td>IntIfGeneralJournal/LedgerJournalTable_1/JournalName</td>
+<td></td>
+</tr>
+</table>
+</div>
+<hr />
+<a name="functoids"></a>
+<span style="font-size: 12px">^&nbsp;</span>
+<a href="#top" class="internalLink">Top</a>
+<br />
+<br />
+<h2>Functoid Mappings</h2>
+<h3>Page 1: Journal</h3>
+<p>
+<a id="pageFunctoids1Anchor" onclick="toggleCollapse('pageFunctoids1', 'pageFunctoids1Anchor');" title="Collapse" class="collapseref">Collapse</a>
+</p>
+<div id="pageFunctoids1">
+<table>
+<tr>
+<th width="40%">Functoid Sequence</th>
+<th width="40%">Destination Node</th>
+<th width="20%">Labels</th>
+</tr>
+<tr>
+<td>
+<div class="functoidArea"><span class="functoidName">Looping</span>
+<span class="functoidBracket">( </span>Journal/Body/Batch/Invoice/Analysis<span class="functoidBracket"> )</span>
+</div>
+</td>
+<td>IntIfGeneralJournal/LedgerJournalTable_1/LedgerJournalTrans_1</td>
+<td></td>
+</tr>
+<tr class="linkTableAltRow">
+<td>
+<div class="functoidArea"><span class="functoidName">Lowercase</span>
+<span class="functoidBracket">( </span>"create"<span class="functoidBracket"> )</span>
+</div>
+</td>
+<td>IntIfGeneralJournal/LedgerJournalTable_1/action</td>
+<td></td>
+</tr>
+<tr>
+<td>
+<div class="functoidArea"><span class="functoidName">Lowercase</span>
+<span class="functoidBracket">( </span>"create"<span class="functoidBracket"> )</span>
+</div>
+</td>
+<td>IntIfGeneralJournal/LedgerJournalTable_1/LedgerJournalTrans_1/action</td>
+<td></td>
+</tr>
+<tr class="linkTableAltRow">
+<td>
+<div class="functoidArea"><span class="functoidName">Scripting</span>
+<span class="functoidScript"><br />&lt;xsl:template name="DynamicsDimensionsXsltTemplate"&gt;
+&lt;xsl:param name="param1" /&gt;
+&lt;xsl:param name="param2" /&gt;
+&lt;xsl:param name="param3" /&gt;
+&lt;xsl:param name="param4" /&gt;
+&lt;xsl:param name="param5" /&gt;
+&lt;xsl:param name="param6" /&gt;
+&lt;xsl:element name="ns0:Dimension"&gt;
+	&lt;xsl:element name="ns0:element"&gt;&lt;xsl:value-of select="$param1" /&gt;&lt;/xsl:element&gt;
+	&lt;xsl:element name="ns0:element"&gt;&lt;xsl:value-of select="$param2" /&gt;&lt;/xsl:element&gt;
+	&lt;xsl:element name="ns0:element"&gt;&lt;xsl:value-of select="$param3" /&gt;&lt;/xsl:element&gt;
+	&lt;xsl:element name="ns0:element"&gt;&lt;xsl:value-of select="$param4" /&gt;&lt;/xsl:element&gt;
+	&lt;xsl:element name="ns0:element"&gt;&lt;xsl:value-of select="$param5" /&gt;&lt;/xsl:element&gt;
+	&lt;xsl:element name="ns0:element"&gt;&lt;xsl:value-of select="$param6" /&gt;&lt;/xsl:element&gt;
+&lt;/xsl:element&gt;
+&lt;/xsl:template&gt;</span>
+<br /><span class="functoidBracket">(</span>
+<br />""<span class="paramComma">,</span>
+<br />""<span class="paramComma">,</span>
+<br />""<span class="paramComma">,</span>
+<br />""<span class="paramComma">,</span>
+<br />&nbsp;&nbsp;&nbsp;Journal/Body/Batch/Invoice/Analysis/CostCentreCode<span class="paramComma">,</span>
+<br />&nbsp;&nbsp;&nbsp;Journal/Body/Batch/Invoice/Analysis/ActivityCode<br /><span class="functoidBracket">)</span>
+</div>
+</td>
+<td>IntIfGeneralJournal/LedgerJournalTable_1/LedgerJournalTrans_1/Dimension</td>
+<td></td>
+</tr>
+<tr>
+<td>
+<div class="functoidArea"><span class="functoidName">Scripting</span>
+<span class="functoidScript"><br />&lt;xsl:template name="DebitAmountXsltTemplate"&gt;
+&lt;xsl:param name="paramDebitOrCredit" /&gt;
+&lt;xsl:param name="paramAmount" /&gt;
+&lt;xsl:element name="ns0:AmountCurDebit"&gt;
+	&lt;xsl:choose&gt;
+	&lt;xsl:when test="$paramDebitOrCredit = 'Debit' "&gt;
+		&lt;xsl:value-of select="$paramAmount" /&gt;
+	&lt;/xsl:when&gt;
+	&lt;xsl:otherwise&gt;
+		&lt;xsl:value-of select="0" /&gt;
+	&lt;/xsl:otherwise&gt;
+	&lt;/xsl:choose&gt;
+&lt;/xsl:element&gt;
+&lt;/xsl:template&gt;</span>
+<br /><span class="functoidBracket">(</span>
+<br />&nbsp;&nbsp;&nbsp;Journal/Body/Batch/Invoice/Analysis/AmountSign<span class="paramComma">,</span>
+<br />&nbsp;&nbsp;&nbsp;Journal/Body/Batch/Invoice/Analysis/Amount<br /><span class="functoidBracket">)</span>
+</div>
+</td>
+<td>IntIfGeneralJournal/LedgerJournalTable_1/LedgerJournalTrans_1/AmountCurDebit</td>
+<td></td>
+</tr>
+<tr class="linkTableAltRow">
+<td>
+<div class="functoidArea"><span class="functoidName">Scripting</span>
+<span class="functoidScript"><br />&lt;xsl:template name="CreditAmountXsltTemplate"&gt;
+&lt;xsl:param name="paramDebitOrCredit" /&gt;
+&lt;xsl:param name="paramAmount" /&gt;
+&lt;xsl:element name="ns0:AmountCurCredit"&gt;
+	&lt;xsl:choose&gt;
+	&lt;xsl:when test="$paramDebitOrCredit = 'Credit' "&gt;
+		&lt;xsl:value-of select="$paramAmount" /&gt;
+	&lt;/xsl:when&gt;
+	&lt;xsl:otherwise&gt;
+		&lt;xsl:value-of select="0" /&gt;
+	&lt;/xsl:otherwise&gt;
+	&lt;/xsl:choose&gt;
+&lt;/xsl:element&gt;
+&lt;/xsl:template&gt;</span>
+<br /><span class="functoidBracket">(</span>
+<br />&nbsp;&nbsp;&nbsp;Journal/Body/Batch/Invoice/Analysis/AmountSign<span class="paramComma">,</span>
+<br />&nbsp;&nbsp;&nbsp;Journal/Body/Batch/Invoice/Analysis/Amount<br /><span class="functoidBracket">)</span>
+</div>
+</td>
+<td>IntIfGeneralJournal/LedgerJournalTable_1/LedgerJournalTrans_1/AmountCurCredit</td>
+<td></td>
+</tr>
+</table>
+</div>
+<hr />
+<a name="constantvalues"></a>
+<span style="font-size: 12px">^&nbsp;</span>
+<a href="#top" class="internalLink">Top</a>
+<br />
+<br />
+<h2>Constant Values</h2>
+<p>
+<a id="constant1ValuesAnchor" onclick="toggleCollapse('constant1Values', 'constant1ValuesAnchor');" title="Collapse" class="collapseref">Collapse</a>
+</p>
+<div id="constant1Values">
+<table>
+<tr>
+<th width="40%">Value</th>
+<th width="60%">Destination Node</th>
+</tr>
+<tr class="linkTableAltRow">
+<td>Yes</td>
+<td>IntIfGeneralJournal/LedgerJournalTable_1/LedgerJournalTrans_1/INTIFApproved</td>
+</tr>
+<tr class="linkTableAltRow">
+<td>1</td>
+<td>IntIfGeneralJournal/LedgerJournalTable_1/LedgerJournalTrans_1/INTIFQantity</td>
+</tr>
+</table>
+</div>
+</body>
+<script type="text/javascript">
+				
+				
+	function toggleCollapse(obj, objAnchor) {
+	var el = document.getElementById(obj);
+	var elAnchor = document.getElementById(objAnchor);
+	if ( el.style.display != "none" ) {
+	  el.style.display = 'none';
+	  elAnchor.innerHTML = 'Expand';
+	}
+	else {
+	  el.style.display = '';
+	  elAnchor.innerHTML = 'Collapse';
+	}
+	}
+	
+				
+			</script>
+</html>
